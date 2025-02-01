@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="w-5/6 mx-auto mt-24">
+        <div class="relative">
+            <div class="relative z-10">
+                <h1 class="font-adlam text-3xl md:text-6xl font-bold animate-fade-in">Pamper Your Pet, <br>
+                    Because They Deserve <br>
+                    the Bes</h1>
+                <p class="font-sora text-xl py-5 opacity-70">Discover a world of treats, toys, and essentials handpicked for
+                    <br>your furry friends. Shop now and make tails wag with joy!
+                </p>
+                <button
+                    class="font-sora text-xl pt-3 pb-3 pl-7 pr-7 bg-[#FFDC26] rounded-lg duration-1000 hover:bg-purple-600 hover:text-white mb-40 sm:mb-52 md:mb-60 lg:mb-72 xl:mb-96 animate-bounce-on-hover">Find
+                    a pet</button>
+            </div>
+            <hr>
+            <div class="absolute bottom-0 z-0">
+                <img class="mb-4 animate-float" src="assets/cat-big.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        /* Fade-in animation for the heading */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+        .animate-fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+    
+        /* Bounce animation for the button on hover */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    
+        .animate-bounce-on-hover:hover {
+            animation: bounce 0.5s ease-in-out;
+        }
+    
+        /* Floating animation for the image */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+    
+        .animate-float {
+            animation: float 2.5s ease-in-out infinite;
+        }
+    </style>
+</body>
+</html>
